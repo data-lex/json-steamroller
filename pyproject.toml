@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "json-steamroller"
+version = "0.1.0"
+description = "A simple tool for flattening JSON Lines datasets"
+authors = ["Alexandre Gomes <alexandre.gomes@laura-br.com>"]
+readme = "README.md"
+packages = [{include = "json_steamroller"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+cytoolz = "^0.12"
+polars = "^0.15.18"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+jupyter = "^1.0.0"
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
